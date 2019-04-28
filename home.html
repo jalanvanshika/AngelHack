@@ -1,0 +1,105 @@
+<html>
+<head>
+<b><h1 align="center">ANOMALY DECTECTOR</h1></b>
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="
+sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script> -->
+
+
+<style type="text/css">
+  .backgroundChange{
+    background: red;
+}
+</style>
+
+</head>
+<body >
+
+<button class="btn btn-success but hid" id="alert-hidden1" style="opacity: 0; position: fixed; left: 0; top: 0;"   name="delete_pressed">ALERT</button>
+<button class="btn btn-success but hid" id="alert1-hidden2" style="opacity: 0; position: fixed; right: 0; top: 0;"   name="delete_pressed">ALERT</button>
+
+<table  align = "center" width="1000">
+<tr><td>   
+    <div id= 111 class="blog-card" style="padding: 10%;">
+    <div class="meta">
+      <div class="photo" style="text-align: center;"><video  width="400" height="400" controls>
+  <source src="Assault001_x264.mp4" type="video/mp4"></video></div>
+   <div class="description" style="text-align: center;">
+      <button class="btn btn-info but" onClick="document.location.reload(true)" name="button_pressed">Refresh</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button class="btn btn-success but hid" id="alert1" name="delete_pressed">ALERT</button>
+    </
+    </div>
+  </div>
+</div>
+	</td>
+	<td></td>
+	 <td >
+    <div id=222 class="blog-card" style="padding: 10%;">
+    <div class="meta">
+      <div class="photo" style="text-align: center;"><video  width="400" height="400" controls>
+  <source src="Normal_Videos_150_x264.mp4" type="video/mp4"></video> </div>
+    </div>
+    <div class="description" style="text-align: center;">
+      <button class="btn btn-info but" onClick="document.location.reload(true)" name="button_pressed">Refresh</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button class="btn btn-success but hid" id="alert2" name="delete_pressed">ALERT</button>
+</td></tr>
+</table>
+
+</body>
+<!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+           
+</html>
+	
+
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<script>
+// function run(interval, frames,idd) {
+//     var int = 1;
+//     var ee = document.getElementById(idd);
+//     function func() {
+//         ee.id = "b"+int;
+//         int++;
+//         if(int === frames) { int = 1; }
+//     }
+    
+//     var swap = window.setInterval(func, interval);
+// }
+
+$(document).ready(function(){
+
+   
+    $("#alert1").click(function () {
+      // $("#vid-style1").effect( "pulsate" );
+      setInterval(function(){
+        $("#111").toggleClass("backgroundChange");
+     },100)
+  });
+
+    $("#alert-hidden1").click(function () {
+      // $("#vid-style1").effect( "pulsate" );
+      setInterval(function(){
+        $("#111").toggleClass("backgroundChange");
+     },100)
+  });
+
+      $("#alert2").click(function () {
+      // $("#vid-style2").effect( "pulsate" );
+      setInterval(function(){
+        $("#222").toggleClass("backgroundChange");
+     },100)
+  });
+
+           $("#alert1-hidden2").click(function () {
+      // $("#vid-style2").effect( "pulsate" );
+      setInterval(function(){
+        $("#222").toggleClass("backgroundChange");
+     },100)
+  });
+
+})
+
+</script>
