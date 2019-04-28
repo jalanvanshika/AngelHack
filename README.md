@@ -1,5 +1,5 @@
 
-# Automatic Anolamous Behavior Detection
+# Automatic Anomalous Behavior Detection
 
 
 
