@@ -1,5 +1,4 @@
-# AngelHack
-Automatic Behavior and Anomaly Detection
+
 # Automatic Anolamous Behavior Detection
 
 
